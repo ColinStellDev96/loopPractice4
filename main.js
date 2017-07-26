@@ -38,6 +38,50 @@ var months = [{
 
 /* PROBLEM ONE: */
 
-for (var i = 0; i < 13; i++) {
-    
+// for (var i = 0; name <= months.length; i++) {
+//     for (var j = 1; j <= months[i].days; j++) {
+//         console.log(months[i].name + ' ' + j);
+//     }
+// }
+
+/* PROBLEM 2: */
+
+for (var hour = 0; hour <24; hour++) {
+    for (var minute = 0; minute < 60; minute ++) {
+        for(var second = 0; second < 60; second ++) {
+            console.log((hour + ':') + (minute + ':') + (second));
+        }
+    }
 }
+
+/* BONUS PROBLEM */
+
+// Raphael Solution Shown In Class
+// var formatHours = function (){
+//     hour = hour % 12;
+//     if ( hour < 10 ) {
+//         hour = '0' + hour;
+//     }
+//     return hour;
+// };
+// var formatMinSec = function (){
+//     if ( time < 10 ) {
+//        time = '0' + time;
+//    }
+//    return time;
+// };
+// var amOrPm = function () {
+//     if ( hour > 11 ) {
+//        return 'PM';
+//    }
+//    else {
+//        return 'AM';
+//    }
+// };
+// for (var hour = 0; hour <24; hour++) {
+//     for (var minute = 0; minute < 60; minute ++){
+//         for(var second = 0; second < 60; second ++) {
+//             console.log(`${formatHours(hour)} : ${formatMinSec(minute)}; : ${formatMinSec(second)} ${amOrPm(hour)}`);
+//         }
+//     }
+// }

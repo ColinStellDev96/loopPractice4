@@ -38,21 +38,23 @@ var months = [{
 
 /* PROBLEM ONE: */
 
-// for (var i = 0; name <= months.length; i++) {
-//     for (var j = 1; j <= months[i].days; j++) {
-//         console.log(months[i].name + ' ' + j);
-//     }
-// }
+for (var name = 0; name < months.length; name++) {
+    for (var j = 1; j < months[name].days; j++) {
+        console.log(months[name].name + ' ' + j);
+    }
+}
+
+// fixed the error of that end by removing the = from <= since .length doesn't need a =
 
 /* PROBLEM 2: */
 
-for (var hour = 0; hour <24; hour++) {
-    for (var minute = 0; minute < 60; minute ++) {
-        for(var second = 0; second < 60; second ++) {
-            console.log((hour + ':') + (minute + ':') + (second));
-        }
-    }
-}
+// for (var hour = 0; hour <24; hour++) {
+//     for (var minute = 0; minute < 60; minute ++) {
+//         for(var second = 0; second < 60; second ++) {
+//             console.log((hour + ':') + (minute + ':') + (second));
+//         }
+//     }
+// }
 
 /* BONUS PROBLEM */
 

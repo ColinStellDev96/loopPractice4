@@ -38,20 +38,19 @@ var months = [{
 
 /* PROBLEM ONE: */
 
-for (var name = 0; name < months.length; name++) {
-    for (var j = 1; j < months[name].days; j++) {
-        console.log(months[name].name + ' ' + j);
+
+for (var name = 0; name < months.length; name++) { // this create a variable to store the months in 'name' for the length of the object, which is 12/
+    for (var j = 1; j < months[name].days + 1; j++) {  // this loops the months and days specified in the object together so that each month will have the correct # of days. the + 1 gives us the last day of each month or else the loop would stop one days short.
+        console.log(months[name].name + ' ' + j);  // this will print out months and days with a space between.
     }
 }
 
-// fixed the error of that end by removing the = from <= since .length doesn't need a =
-
 /* PROBLEM 2: */
 
-// for (var hour = 0; hour <24; hour++) {
-//     for (var minute = 0; minute < 60; minute ++) {
-//         for(var second = 0; second < 60; second ++) {
-//             console.log((hour + ':') + (minute + ':') + (second));
+// for (var hour = 0; hour < 24; hour++) { // this loops gives us each hour of the day in the variable 'hour'
+//     for (var minute = 0; minute < 60; minute ++) { // this loop gives us 60 minutes in the variable 'minute'
+//         for(var seconds = 0; seconds < 60; seconds ++) { // this loop gives us 60 seconds in the variable 'seconds'
+//             console.log((hour + ':') + (minute + ':') + (seconds)); // this will print hour:minute:seconds for each hour, minute and second of each day.
 //         }
 //     }
 // }
